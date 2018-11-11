@@ -52,4 +52,10 @@ func main() {
 
 	fmt.Println("Area of rectange ", rectInfo.area)
 	fmt.Println("Perimeter of rectange ", rectInfo.perimter)
+
+	// with interface implementation
+	var c Shape = Circle{10}
+	var r Shape = Rectangle{10, 20}
+	fmt.Printf("Thea area and perimeter of circle is %v and %v respectively.\n", c.area(), c.perimeter())
+	fmt.Printf("Thea area and perimeter of rectangle is %v and %v respectively.\n", r.area(), r.perimeter())
 }
